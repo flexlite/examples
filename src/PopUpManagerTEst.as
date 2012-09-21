@@ -41,7 +41,7 @@ package
 			scale.addEventListener(EffectEvent.EFFECT_END,onEffectEnd);
 			button.verticalCenter = 0;
 			button.horizontalCenter = 0;
-			PopUpManager.addPopUp(button,false,false,0,scale);
+			PopUpManager.addPopUp(button,false,false,false,0,scale);
 		}
 		
 		private function onEffectEnd(event:EffectEvent):void
