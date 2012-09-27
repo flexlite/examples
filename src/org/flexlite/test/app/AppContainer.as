@@ -6,6 +6,8 @@ package org.flexlite.test.app
 	import flash.events.MouseEvent;
 	
 	import org.flexlite.domUI.components.Group;
+	import org.flexlite.domUI.core.Theme;
+	import org.flexlite.domUI.managers.InjectManager;
 	import org.flexlite.domUI.managers.SystemManager;
 	import org.flexlite.domUI.skins.themes.SparkTheme;
 	
@@ -18,7 +20,7 @@ package org.flexlite.test.app
 		public function AppContainer()
 		{
 			super();
-			SparkTheme.apply();
+			InjectManager.mapClass(Theme,SparkTheme);
 			id = "appContainer";
 			stage.addEventListener(MouseEvent.MOUSE_DOWN,onMouseDown);
 			init();
