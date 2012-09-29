@@ -18,12 +18,10 @@ package
 		private var textInput:TextInput;
 		override protected function init():void
 		{
-			
 			textInput = new TextInput;
 			textInput.x = 220;
 			textInput.width = 160;
-			textInput.text = "哈哈：";
-//			textInput.height = 19;
+			textInput.text = "测试文本：";
 			addElement(textInput);
 			textInput.addEventListener(Event.CHANGE,onChange);
 		}

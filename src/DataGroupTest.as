@@ -2,7 +2,9 @@ package
 {
 	import org.flexlite.domUI.collections.ArrayCollection;
 	import org.flexlite.domUI.components.DataGroup;
+	import org.flexlite.domUI.components.Scroller;
 	import org.flexlite.domUI.layouts.TileLayout;
+	import org.flexlite.domUI.layouts.VerticalLayout;
 	import org.flexlite.test.app.AppContainer;
 	
 	/**
@@ -28,14 +30,16 @@ package
 			dataGroup.horizontalCenter = 0;
 			dataGroup.verticalCenter = 0;
 			dataGroup.dataProvider = dp;
-			var layout:TileLayout = new TileLayout;
+			var layout:VerticalLayout = new VerticalLayout;
 			layout.useVirtualLayout = true;
-			layout.paddingBottom = layout.paddingTop = layout.paddingLeft = layout.paddingRight = 30;
+			layout.paddingTop = 350;
 			dataGroup.layout = layout;
 			dataGroup.height = 300;
 			dataGroup.width = 350;
 			dataGroup.clipAndEnableScrolling = true;
-			addElement(dataGroup);
+			var scroller:Scroller = new Scroller;
+			scroller.viewport = dataGroup;
+			addElement(scroller);
 			
 			for(var i:int=0;i<10;i++)
 			{

@@ -31,16 +31,10 @@ package
 			list.horizontalCenter = 0;
 			list.verticalCenter = 0;
 			list.requireSelection = true;
-			list.height = 400;
-//			list.width = 100;
 			list.dataProvider = dp;
 			var layout:VerticalLayout = new VerticalLayout;
-			layout.paddingBottom = layout.paddingTop = layout.paddingLeft = layout.paddingRight = 30;
 			layout.gap = 0;
 			layout.horizontalAlign = HorizontalAlign.CONTENT_JUSTIFY;
-//			layout.horizontalAlign = HorizontalAlign.JUSTIFY;
-//			layout.verticalAlign = VerticalAlign.JUSTIFY;
-//			layout.verticalAlign = VerticalAlign.CONTENT_JUSTIFY;
 			list.layout = layout;
 			list.addEventListener(ListEvent.ITEM_ROLL_OUT,onListEvent);
 			list.addEventListener(ListEvent.ITEM_ROLL_OVER,onListEvent);
@@ -58,14 +52,11 @@ package
 		protected function onIndexChange(event:IndexChangeEvent):void
 		{
 			trace("[type:"+event.type+" newIndex:"+event.newIndex+" oldIndex:"+event.oldIndex+"]");
-//			if(event.type == IndexChangeEvent.CHANGING)
-//				event.preventDefault();
 			trace(list.selectedItem);
 		}
 		
 		protected function onListEvent(event:ListEvent):void
 		{
-//			list.selectedIndex = 1;
 //			trace(event.type+":"+event.itemIndex);
 		}
 		

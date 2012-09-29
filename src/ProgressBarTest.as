@@ -22,9 +22,9 @@ package
 		
 		override protected function init():void
 		{
-			progress.skinName = ProgressBarSkin;
 			progress.horizontalCenter = 0;
 			progress.verticalCenter = 0;
+			progress.width = 200;
 			progress.slideDuration = 1000;
 			addElement(progress);
 			this.stage.addEventListener(MouseEvent.CLICK,onClick);
@@ -32,7 +32,10 @@ package
 		
 		private function onClick(event:MouseEvent):void
 		{
-			progress.value = int(Math.random()*100);
+			var value:Number = int(Math.random()*100);
+			if(value==99)
+				value = 100;
+			progress.value = value;
 		}
 	}
 }

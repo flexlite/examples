@@ -28,9 +28,9 @@ package
 			cbb.dataProvider = dp;
 			cbb.addEventListener(UIEvent.OPEN,onOpen);
 			addElement(cbb);
-			cbb.x = 100;
-			cbb.y = 150;
-			cbb.width = 200;
+			cbb.width = 110;
+			cbb.horizontalCenter = 0;
+			cbb.y = 10;
 			for(var i:int=0;i<10;i++)
 			{
 				dp.addItem("添加了元素："+i);

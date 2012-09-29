@@ -4,7 +4,10 @@ package
 	import org.flexlite.domUI.components.DataGroup;
 	import org.flexlite.domUI.components.EditableText;
 	import org.flexlite.domUI.components.PageNavigator;
+	import org.flexlite.domUI.layouts.HorizontalLayout;
 	import org.flexlite.domUI.layouts.TileLayout;
+	import org.flexlite.domUI.layouts.TileOrientation;
+	import org.flexlite.domUI.skins.vector.PageNavigatorSkin;
 	import org.flexlite.test.app.AppContainer;
 	
 	
@@ -22,24 +25,26 @@ package
 		override protected function init():void
 		{
 			var page:PageNavigator = new PageNavigator;
+			page.skinName = PageNavigatorSkin;
+			page.horizontalCenter = 0;
+			page.verticalCenter = 0;
 			addElement(page);
 			
 			var dataGroup:DataGroup = new DataGroup;
-			dataGroup.horizontalCenter = 0;
-			dataGroup.verticalCenter = 0;
 			var dp:ArrayCollection = new ArrayCollection;
 			dataGroup.dataProvider = dp;
-			var layout:TileLayout = new TileLayout;
+			var layout:HorizontalLayout = new HorizontalLayout;
 			layout.useVirtualLayout = true;
+			layout.paddingLeft = 180;
 			dataGroup.layout = layout;
 			dataGroup.clipAndEnableScrolling = true;
 			addElement(dataGroup);
 			page.viewport = dataGroup;
-			page.width = 348;
-			page.height = 120;
-			for(var i:int=0;i<50;i++)
+			page.height = 118;
+			page.width = 290;
+			for(var i:int=0;i<70;i++)
 			{
-				dp.addItem("添加了元素："+i);
+				dp.addItem("添加了元素：");
 			}
 		}
 	}

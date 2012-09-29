@@ -1,15 +1,11 @@
 package org.flexlite.test.app
 {
-	import flash.display.StageAlign;
-	import flash.display.StageScaleMode;
-	import flash.events.Event;
 	import flash.events.MouseEvent;
 	
-	import org.flexlite.domUI.components.Group;
 	import org.flexlite.domUI.core.Theme;
 	import org.flexlite.domUI.managers.InjectManager;
 	import org.flexlite.domUI.managers.SystemManager;
-	import org.flexlite.domUI.skins.themes.SparkTheme;
+	import org.flexlite.domUI.skins.themes.VectorTheme;
 	
 	/**
 	 * 应用程序容器
@@ -20,7 +16,7 @@ package org.flexlite.test.app
 		public function AppContainer()
 		{
 			super();
-			InjectManager.mapClass(Theme,SparkTheme);
+			InjectManager.mapClass(Theme,VectorTheme);
 			id = "appContainer";
 			stage.addEventListener(MouseEvent.MOUSE_DOWN,onMouseDown);
 			init();

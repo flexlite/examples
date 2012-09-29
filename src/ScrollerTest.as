@@ -31,7 +31,7 @@ package
 			var layout:TileLayout = new TileLayout;
 			layout.orientation = TileOrientation.COLUMNS;
 			layout.horizontalAlign = HorizontalAlign.CENTER;
-//			layout.paddingLeft = 300;
+			layout.paddingLeft = 300;
 //			layout.paddingRight = 300;
 //			layout.paddingBottom = 300;
 //			layout.paddingTop = 300;
