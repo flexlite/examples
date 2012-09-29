@@ -4,7 +4,6 @@ package
 	
 	import org.flexlite.domUI.components.ProgressBar;
 	import org.flexlite.test.app.AppContainer;
-	import org.flexlite.test.skin.ProgressBarSkin;
 	
 	
 	/**

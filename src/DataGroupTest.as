@@ -3,7 +3,6 @@ package
 	import org.flexlite.domUI.collections.ArrayCollection;
 	import org.flexlite.domUI.components.DataGroup;
 	import org.flexlite.domUI.components.Scroller;
-	import org.flexlite.domUI.layouts.TileLayout;
 	import org.flexlite.domUI.layouts.VerticalLayout;
 	import org.flexlite.test.app.AppContainer;
 	

@@ -2,11 +2,8 @@ package
 {
 	import org.flexlite.domUI.collections.ArrayCollection;
 	import org.flexlite.domUI.components.DataGroup;
-	import org.flexlite.domUI.components.EditableText;
 	import org.flexlite.domUI.components.PageNavigator;
 	import org.flexlite.domUI.layouts.HorizontalLayout;
-	import org.flexlite.domUI.layouts.TileLayout;
-	import org.flexlite.domUI.layouts.TileOrientation;
 	import org.flexlite.domUI.skins.vector.PageNavigatorSkin;
 	import org.flexlite.test.app.AppContainer;
 	

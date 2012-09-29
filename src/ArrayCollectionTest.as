@@ -1,9 +1,9 @@
 package
 {
+	import flash.display.Sprite;
+	
 	import org.flexlite.domUI.collections.ArrayCollection;
 	import org.flexlite.domUI.events.CollectionEvent;
-	
-	import flash.display.Sprite;
 	
 	/**
 	 * ArrayCollection测试

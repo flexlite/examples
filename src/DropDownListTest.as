@@ -1,13 +1,8 @@
 package
 {
-	import flash.display.StageAlign;
-	import flash.display.StageScaleMode;
-	
 	import org.flexlite.domUI.collections.ArrayCollection;
 	import org.flexlite.domUI.components.DropDownList;
-	import org.flexlite.domUI.core.DomGlobals;
 	import org.flexlite.domUI.events.UIEvent;
-	import org.flexlite.domUI.skins.themes.SparkTheme;
 	import org.flexlite.test.app.AppContainer;
 	
 	

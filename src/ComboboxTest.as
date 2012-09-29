@@ -1,13 +1,8 @@
 package
 {
-	import flash.display.StageAlign;
-	import flash.display.StageScaleMode;
-	
 	import org.flexlite.domUI.collections.ArrayCollection;
 	import org.flexlite.domUI.components.ComboBox;
-	import org.flexlite.domUI.core.DomGlobals;
 	import org.flexlite.domUI.events.UIEvent;
-	import org.flexlite.domUI.skins.themes.SparkTheme;
 	import org.flexlite.test.app.AppContainer;
 	
 	public class ComboboxTest extends AppContainer
@@ -25,8 +20,9 @@ package
 			cbb.dataProvider = dp;
 			cbb.addEventListener(UIEvent.OPEN,onOpen);
 			addElement(cbb);
-			cbb.x = 100;
-			cbb.y = 150;
+			cbb.horizontalCenter = 0;
+			cbb.width = 100;
+			cbb.y = 10;
 			for(var i:int=0;i<10;i++)
 			{
 				dp.addItem("添加了元素："+i);

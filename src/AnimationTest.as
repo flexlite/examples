@@ -1,16 +1,13 @@
 package
 {
-	import org.flexlite.test.app.AppContainer;
+	import flash.events.MouseEvent;
+	
 	import org.flexlite.domUI.components.Button;
 	import org.flexlite.domUI.effects.animation.Animation;
 	import org.flexlite.domUI.effects.animation.MotionPath;
 	import org.flexlite.domUI.effects.animation.RepeatBehavior;
-	import org.flexlite.domUI.effects.easing.Bounce;
 	import org.flexlite.domUI.effects.easing.Elastic;
-	import org.flexlite.domUI.effects.easing.Linear;
-	import org.flexlite.domUI.effects.easing.Power;
-	
-	import flash.events.MouseEvent;
+	import org.flexlite.test.app.AppContainer;
 	
 	/**
 	 * Animation测试

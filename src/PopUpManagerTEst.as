@@ -1,17 +1,13 @@
 package
 {
-	import flash.display.StageAlign;
-	import flash.display.StageScaleMode;
 	import flash.events.MouseEvent;
 	
 	import org.flexlite.domUI.components.Button;
-	import org.flexlite.domUI.core.DomGlobals;
 	import org.flexlite.domUI.core.IEffect;
 	import org.flexlite.domUI.core.IVisualElement;
 	import org.flexlite.domUI.effects.Scale;
 	import org.flexlite.domUI.events.EffectEvent;
 	import org.flexlite.domUI.managers.PopUpManager;
-	import org.flexlite.domUI.skins.themes.SparkTheme;
 	import org.flexlite.test.app.AppContainer;
 	
 	
