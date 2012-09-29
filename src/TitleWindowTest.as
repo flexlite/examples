@@ -20,6 +20,7 @@ package
 		{
 			super();
 			this.stage.addEventListener(MouseEvent.CLICK,onStageClick);
+			createOneWindow();
 		}
 		
 		private var windowNum:int = 0;
@@ -39,6 +40,11 @@ package
 			}
 			if(found)
 				return;
+			createOneWindow();
+		}
+		
+		private function createOneWindow():void
+		{
 			windowNum++;
 			var window:TitleWindow = new TitleWindow();
 			window.height = 300;
