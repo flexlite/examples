@@ -2,8 +2,8 @@ package org.flexlite.test.app
 {
 	import flash.events.MouseEvent;
 	
+	import org.flexlite.domCore.Injector;
 	import org.flexlite.domUI.core.Theme;
-	import org.flexlite.domUI.managers.InjectManager;
 	import org.flexlite.domUI.managers.SystemManager;
 	import org.flexlite.domUI.skins.themes.VectorTheme;
 	
@@ -16,7 +16,7 @@ package org.flexlite.test.app
 		public function AppContainer()
 		{
 			super();
-			InjectManager.mapClass(Theme,VectorTheme);
+			Injector.mapClass(Theme,VectorTheme);
 			id = "appContainer";
 			stage.addEventListener(MouseEvent.MOUSE_DOWN,onMouseDown);
 			init();
