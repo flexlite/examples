@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<lazyload>
+		<item name="RESOURCES_ZHH" url="outresource/files/Resources_ZHH.swf" type="swf" language="all" size="0"/>
+		<item name="BUILDING_UPGRADE_PANEL_UI" url="outresource/files/BUILDING_UPGRADE_PANEL_UI.swf" type="swf" language="all" size="0"/>
+		<item name="TASK_DIALOG" url="outresource/files/TASK_DIALOG.swf" type="swf" language="all" size="0" subkeys="JQBB70005_SCENE_REST_RD,JQBB70005_SCENE_REST_RU,JQBB70005_SCENE_REST_LD,JQBB70005_SCENE_REST_LU"/>
+	</lazyload>
+</root>	

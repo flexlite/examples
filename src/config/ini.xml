@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<loading>
+		<item name="loading_ui" url="outresource/files/Loading_UI.swf" type="swf" language="all" size="0"/>
+	</loading>
+	<preload>
+		<item name="main" url="Main.swf" type="swf" language="all" size="225598"/>
+		<item name="matsConfig" url="outresource/mat__1f8c934.json" type="json" language="all" size="225598"/>
+	</preload>
+	<lazyload>
+		<item name="RESOURCES_ZHH" url="outresource/files/Resources_ZHH.swf" type="swf" language="all" size="0"/>
+		<item name="BUILDING_UPGRADE_PANEL_UI" url="outresource/files/BUILDING_UPGRADE_PANEL_UI.swf" type="swf" language="all" size="0"/>
+		<item name="TASK_DIALOG" url="outresource/files/TASK_DIALOG.swf" type="swf" language="all" size="0" subkeys="JQBB70005_SCENE_REST_RD,JQBB70005_SCENE_REST_RU,JQBB70005_SCENE_REST_LD,JQBB70005_SCENE_REST_LU"/>
+	</lazyload>
+</root>
