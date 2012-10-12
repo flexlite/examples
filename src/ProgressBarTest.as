@@ -23,7 +23,8 @@ package
 		{
 			progress.horizontalCenter = 0;
 			progress.verticalCenter = 0;
-			progress.width = 200;
+//			progress.width = 200;
+			progress.value = 100;
 			progress.slideDuration = 1000;
 			addElement(progress);
 			this.stage.addEventListener(MouseEvent.CLICK,onClick);
