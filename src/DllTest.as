@@ -27,7 +27,7 @@ package
 			Dll.eventDispather.addEventListener(DllEvent.LOADING_COMPLETE,onLoadingComp);
 			Dll.eventDispather.addEventListener(DllEvent.PRELOAD_COMPLETE,onPreloadComp);
 			Dll.eventDispather.addEventListener(DllEvent.PRELOAD_PROGRESS,onProgress);
-			Dll.loadConfig(["config/ini.xml"],"xml","cn");
+			Dll.setInitConfig(["config/ini.xml"],"xml","cn");
 		}
 		
 		private var progress:ProgressBar = new ProgressBar();
