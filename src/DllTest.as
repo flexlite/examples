@@ -27,7 +27,7 @@ package
 			Dll.eventDispather.addEventListener(DllEvent.LOADING_COMPLETE,onLoadingComp);
 			Dll.eventDispather.addEventListener(DllEvent.PRELOAD_COMPLETE,onPreloadComp);
 			Dll.eventDispather.addEventListener(DllEvent.PRELOAD_PROGRESS,onProgress);
-			Dll.setInitConfig(["config/ini.xml"],"xml","cn");
+			Dll.setInitConfig(["config/ini.xml"],"xml","0");
 		}
 		
 		private var progress:ProgressBar = new ProgressBar();
@@ -62,6 +62,7 @@ package
 		private function onProgress(event:DllEvent):void
 		{
 			progress.value = event.bytesLoaded*100/event.bytesTotal;
+			trace(event.dllItem);
 		}
 	}
 }
