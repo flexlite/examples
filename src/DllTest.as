@@ -39,7 +39,6 @@ package
 			progress.horizontalCenter = 0;
 			progress.verticalCenter = 0;
 			addElement(progress);
-			Dll.loadPreloadGroup();
 		}
 		
 		private function onPreloadComp(event:DllEvent):void
