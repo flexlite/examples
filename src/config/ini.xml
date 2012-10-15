@@ -1,14 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<loading>
-		<item name="loading_ui" url="outresource/files/Loading_UI.swf" type="swf" language="all" size="225598"/>
-	</loading>
-	<preload>
-		<item name="preloadconfig" url="config/preload.dllc" type="bin" language="all" size="225598"/>
-		<item name="MainUI" url="resource/swf/Main.swf" type="swf" language="all" size="36703" subkeys="Ui_Main_MenuStreng,Ui_Main_MenuPK,Ui_Main_XPText"/>
-	</preload>
-	<lazyload>
-		<item name="initconfig" url="config/ini.dllc" type="amf" language="all" size="225598"/>
-		<item name="TestImg" url="resource/img/1.png" type="img" language="all" size="225598"/>
-	</lazyload>
+  <loading>
+    <item name="loading_ui" url="files/Loading_UI.swf" type="swf" language="all" size="225598"/>
+  </loading>
+  <preload>
+    <item name="MainUI" url="swf/Main.swf" type="swf" language="all" size="36703" subkeys="Ui_Main_MenuStreng,Ui_Main_MenuPK,Ui_Main_XPText"/>
+  </preload>
+  <lazyload>
+    <item name="TestImg" url="img/1.png" type="img" language="all" size="225598"/>
+  </lazyload>
 </root>

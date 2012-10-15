@@ -27,7 +27,9 @@ package
 			Dll.eventDispather.addEventListener(DllEvent.LOADING_COMPLETE,onLoadingComp);
 			Dll.eventDispather.addEventListener(DllEvent.PRELOAD_COMPLETE,onPreloadComp);
 			Dll.eventDispather.addEventListener(DllEvent.PRELOAD_PROGRESS,onProgress);
-			Dll.setInitConfig(["config/ini.xml"],"xml","0");
+			Dll.eventDispather.addEventListener(DllEvent.ITEM_LOAD_FINISHED,onItemFinished);
+			Dll.setInitConfig(["config/ini.amf"],"amf","001","cn","resource/",true);
+//			Dll.setInitConfig(["config/preload.xml","config/lazyload.xml"],"xml","001","cn","resource/",true);
 		}
 		
 		private var progress:ProgressBar = new ProgressBar();
@@ -38,11 +40,12 @@ package
 		{
 			progress.horizontalCenter = 0;
 			progress.verticalCenter = 0;
-			addElement(progress);
+			addElement(progress); 
 		}
 		
 		private function onPreloadComp(event:DllEvent):void
 		{
+			
 			Dll.getResAsync("TestImg",function(data:BitmapData):void{
 				var bitmap:Bitmap = new Bitmap(data);
 				stage.addChild(bitmap);
@@ -61,6 +64,10 @@ package
 		private function onProgress(event:DllEvent):void
 		{
 			progress.value = event.bytesLoaded*100/event.bytesTotal;
+		}
+		
+		private function onItemFinished(event:DllEvent):void
+		{
 			trace(event.dllItem);
 		}
 	}
