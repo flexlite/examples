@@ -6,6 +6,7 @@ package
 	import flash.utils.ByteArray;
 	
 	import org.flexlite.domDll.Dll;
+	import org.flexlite.domDll.core.ConfigItem;
 	import org.flexlite.domDll.events.DllEvent;
 	import org.flexlite.domUI.components.ProgressBar;
 	import org.flexlite.test.app.AppContainer;
@@ -28,8 +29,9 @@ package
 			Dll.eventDispather.addEventListener(DllEvent.PRELOAD_COMPLETE,onPreloadComp);
 			Dll.eventDispather.addEventListener(DllEvent.PRELOAD_PROGRESS,onProgress);
 			Dll.eventDispather.addEventListener(DllEvent.ITEM_LOAD_FINISHED,onItemFinished);
-			Dll.setInitConfig(["config/ini.amf"],"amf","001","cn","resource/",true);
-//			Dll.setInitConfig(["config/preload.xml","config/lazyload.xml"],"xml","001","cn","resource/",true);
+			var config:ConfigItem = new ConfigItem("config/ini.amf","amf","resource/");
+			var configList:Vector.<ConfigItem> = new <ConfigItem>[config];
+			Dll.setInitConfig(configList,"001","cn",true);
 		}
 		
 		private var progress:ProgressBar = new ProgressBar();
