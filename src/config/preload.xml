@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 	<loading>
-		<item name="loading_ui" url="files/Loading_UI.swf" type="swf" language="all" size="225598" />
-	</loading>
+		<item name="LoadingSprite" url="LoadingSprite.swf" type="swf" language="all" size="88841"/>
+    </loading>
 	<preload>
 		<item name="MainUI" url="swf/Main.swf" type="swf" language="all" size="36703" subkeys="Ui_Main_MenuStreng,Ui_Main_MenuPK,Ui_Main_XPText" />
 	</preload>
