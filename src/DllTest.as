@@ -3,6 +3,7 @@ package
 	import flash.display.Bitmap;
 	import flash.display.BitmapData;
 	import flash.display.DisplayObject;
+	import flash.display.Loader;
 	import flash.utils.ByteArray;
 	
 	import org.flexlite.domDll.Dll;
@@ -49,7 +50,7 @@ package
 		 */		
 		private function onLoadingComp(event:DllEvent):void
 		{
-			loadingSprite = Dll.getRes("LoadingSprite");
+			loadingSprite = (Dll.getRes("LoadingSprite") as Loader).content;
 			stage.addChild(loadingSprite);
 		}
 		/**
