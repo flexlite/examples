@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <loading>
+  <group name="loading">
     <item name="LoadingSprite" url="LoadingSprite.swf" type="swf" language="all" size="88841"/>
-  </loading>
-  <preload>
+  </group>
+  <group name="preload">
     <item name="MainUI" url="swf/Main.swf" type="swf" language="all" size="36703" subkeys="Ui_Main_MenuStreng,Ui_Main_MenuPK,Ui_Main_XPText"/>
-  </preload>
-  <lazyload>
-    <item name="TestImg" url="img/1.png" type="img" language="all" size="225598"/>
-  </lazyload>
+  </group>
+  <group name="lazyload">
+    <item name="TestImg" url="img/1.png" type="img" language="all" size="122535"/>
+  </group>
 </root>

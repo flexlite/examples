@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-	<lazyload>
-		<item name="TestImg" url="img/1.png" type="img" language="all" size="225598" />
-	</lazyload>
+  <group name="lazyload">
+    <item name="TestImg" url="img/1.png" type="img" language="all" size="122535"/>
+  </group>
 </root>	

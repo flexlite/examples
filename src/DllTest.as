@@ -26,13 +26,14 @@ package
 		
 		override protected function init():void
 		{
-			Dll.eventDispather.addEventListener(DllEvent.LOADING_COMPLETE,onLoadingComp);
-			Dll.eventDispather.addEventListener(DllEvent.PRELOAD_COMPLETE,onPreloadComp);
-			Dll.eventDispather.addEventListener(DllEvent.PRELOAD_PROGRESS,onProgress);
+			Dll.eventDispather.addEventListener(DllEvent.GROUP_COMPLETE,onGroupComp);
+			Dll.eventDispather.addEventListener(DllEvent.GROUP_PROGRESS,onProgress);
 			Dll.eventDispather.addEventListener(DllEvent.ITEM_LOAD_FINISHED,onItemFinished);
 			var config:ConfigItem = new ConfigItem("config/ini.amf","amf","resource/");
 			var configList:Vector.<ConfigItem> = new <ConfigItem>[config];
-			Dll.setInitConfig(configList,"001","cn",true);
+			Dll.loadConfig(configList,"001","cn");//加载配置文件
+			Dll.loadGroup("loading");//加载进度条素材
+			Dll.loadGroup("preload");//加载预加载资源
 		}
 		
 		/**
@@ -40,7 +41,7 @@ package
 		 */		
 		private function onItemFinished(event:DllEvent):void
 		{
-			if(!event.dllItem.loadComplete)
+			if(!event.dllItem.loaded)
 				trace("资源加载失败::::",event.dllItem);
 		}
 		
@@ -48,25 +49,37 @@ package
 		/**
 		 * Loading组加载完成
 		 */		
-		private function onLoadingComp(event:DllEvent):void
+		private function onGroupComp(event:DllEvent):void
 		{
-			loadingSprite = (Dll.getRes("LoadingSprite") as Loader).content;
-			stage.addChild(loadingSprite);
+			if(event.groupName=="loading")
+			{
+				loadingSprite = (Dll.getRes("LoadingSprite") as Loader).content;
+				stage.addChild(loadingSprite);
+			}
+			else if(event.groupName=="preload")
+			{
+				allComplete();
+			}
 		}
 		/**
 		 * 预加载组加载进度
 		 */		
 		private function onProgress(event:DllEvent):void
 		{
-			loadingSprite["progress"] = int(event.bytesLoaded*100/event.bytesTotal);
-			trace(loadingSprite["progress"]);
+			if(event.groupName=="preload")
+			{
+				loadingSprite["progress"] = int(event.bytesLoaded*100/event.bytesTotal);
+				trace(loadingSprite["progress"]);
+			}
 		}
 		
 		/**
 		 * 预加载组全部加载完成
 		 */		
-		private function onPreloadComp(event:DllEvent):void
+		private function allComplete():void
 		{
+			Dll.eventDispather.removeEventListener(DllEvent.GROUP_COMPLETE,onGroupComp);
+			Dll.eventDispather.removeEventListener(DllEvent.GROUP_PROGRESS,onProgress);
 			stage.removeChild(loadingSprite);
 			
 			var swf:DisplayObject = Dll.getRes("MainUI") as DisplayObject;
