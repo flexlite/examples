@@ -4,6 +4,7 @@ package
 	import flash.display.BitmapData;
 	import flash.display.DisplayObject;
 	import flash.display.Loader;
+	import flash.media.Sound;
 	import flash.utils.ByteArray;
 	
 	import org.flexlite.domDll.Dll;
@@ -90,6 +91,13 @@ package
 			var xpText:DisplayObject = new clazz() as DisplayObject;
 			xpText.x = 330;
 			stage.addChild(xpText);
+			
+			var boxCritical:Sound = Dll.getRes("boxCritical");
+			boxCritical.play();
+			
+			Dll.getResAsync("throwAPunch",function(throwAPunch:Sound):void{
+				throwAPunch.play();
+			});
 			
 			Dll.getResAsync("TestImg",function(data:BitmapData):void{
 				var bitmap:Bitmap = new Bitmap(data);
