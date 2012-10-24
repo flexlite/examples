@@ -2,8 +2,7 @@ package
 {
 	import flash.events.Event;
 	import flash.events.TextEvent;
-	
-	import flashx.textLayout.formats.TextAlign;
+	import flash.text.TextFormatAlign;
 	
 	import org.flexlite.domUI.components.EditableText;
 	import org.flexlite.test.app.AppContainer;
@@ -28,7 +27,7 @@ package
 			editableText.text = "哈哈";
 			editableText.maxChars = 5;
 			editableText.displayAsPassword = true;
-			editableText.textAlign = TextAlign.CENTER;
+			editableText.textAlign = TextFormatAlign.CENTER;
 			editableText.graphics.beginFill(0x009aff);
 			editableText.graphics.drawRect(0,0,100,30);
 			editableText.graphics.endFill();
