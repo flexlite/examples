@@ -22,10 +22,6 @@ package
 			super();
 			this.stage.addEventListener(MouseEvent.CLICK,onStageClick);
 			createOneWindow();
-			var rect:Rect = new Rect();
-			rect.color = 0x009aff;
-			rect.alpha = 0.5;
-			PopUpManager.modalMask = rect;
 		}
 		
 		private var windowNum:int = 0;
@@ -56,7 +52,7 @@ package
 			window.width = 400;
 			window.title = "测试窗口"+windowNum;
 			window.addEventListener(CloseEvent.CLOSE,onClose);
-			PopUpManager.addPopUp(window,true);
+			PopUpManager.addPopUp(window);
 		}
 		
 		private function onClose(event:CloseEvent):void
