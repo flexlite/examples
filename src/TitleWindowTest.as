@@ -3,6 +3,7 @@ package
 	import flash.display.InteractiveObject;
 	import flash.events.MouseEvent;
 	
+	import org.flexlite.domUI.components.Rect;
 	import org.flexlite.domUI.components.TitleWindow;
 	import org.flexlite.domUI.effects.Scale;
 	import org.flexlite.domUI.events.CloseEvent;
@@ -21,6 +22,10 @@ package
 			super();
 			this.stage.addEventListener(MouseEvent.CLICK,onStageClick);
 			createOneWindow();
+			var rect:Rect = new Rect();
+			rect.color = 0x009aff;
+			rect.alpha = 0.5;
+			PopUpManager.modalMask = rect;
 		}
 		
 		private var windowNum:int = 0;
@@ -51,14 +56,7 @@ package
 			window.width = 400;
 			window.title = "测试窗口"+windowNum;
 			window.addEventListener(CloseEvent.CLOSE,onClose);
-			window.x = (stage.stageWidth-window.width)*0.5;
-			window.y = (stage.stageHeight-window.height)*0.5;
-			var scale:Scale = new Scale();
-			scale.scaleXFrom = 0;
-			scale.scaleYFrom = 0;
-			scale.scaleXTo = 1;
-			scale.scaleYTo = 1;
-			PopUpManager.addPopUp(window,false,false,false,0,scale);
+			PopUpManager.addPopUp(window,true);
 		}
 		
 		private function onClose(event:CloseEvent):void
