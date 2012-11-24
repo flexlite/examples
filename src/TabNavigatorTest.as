@@ -2,6 +2,7 @@ package
 {
 	import org.flexlite.domUI.components.Button;
 	import org.flexlite.domUI.components.TabNavigator;
+	import org.flexlite.domUI.skins.vector.TabNavigatorSkin;
 	import org.flexlite.test.app.AppContainer;
 	
 	
@@ -21,17 +22,18 @@ package
 			var tabNavigator:TabNavigator = new TabNavigator;
 			tabNavigator.horizontalCenter = 0;
 			tabNavigator.verticalCenter = 0;
-			tabNavigator.gap = 1;
 			addElement(tabNavigator);
+			
 			var button:Button = new Button();
 			button.label = "按钮1";
-			button.navigatorLabel = "面板1";
+			button.name = "面板1";
 			button.horizontalCenter = 0;
 			tabNavigator.addElement(button);
 			var button2:Button = new Button();
 			button2.label = "按钮2";
-			button2.navigatorLabel = "面板2";
+			button2.name = "面板2";
 			tabNavigator.addElement(button2);
+			tabNavigator.selectedIndex = 1;
 		}
 	}
 }
