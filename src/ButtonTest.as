@@ -1,9 +1,14 @@
 package
 {
+	import flash.events.Event;
+	
 	import org.flexlite.domUI.components.Button;
 	import org.flexlite.domUI.components.CheckBox;
+	import org.flexlite.domUI.components.RadioButton;
+	import org.flexlite.domUI.components.RadioButtonGroup;
 	import org.flexlite.domUI.components.ToggleButton;
 	import org.flexlite.domUI.core.PopUpPosition;
+	import org.flexlite.domUI.skins.vector.RadioButtonSkin;
 	import org.flexlite.test.app.AppContainer;
 	
 	/**
@@ -40,6 +45,28 @@ package
 			checkBox.label = "复选框";
 			checkBox.selected = true;
 			addElement(checkBox);
+			
+			var radio1:RadioButton = new RadioButton();
+			radio1.label = "单选按钮1";
+			radio1.value = "数据源1";
+			radio1.y = 100;
+			radio1.x = 10;
+			addElement(radio1);
+			
+			var radio2:RadioButton = new RadioButton();
+			radio2.label = "单选按钮2";
+			radio2.value = "数据源2";
+			radio2.y = 100;
+			radio2.x = 100;
+			addElement(radio2);
+			
+			radio1.group.addEventListener(Event.CHANGE,onRaidoSelectChange);
+		}
+		
+		protected function onRaidoSelectChange(event:Event):void
+		{
+			var g:RadioButtonGroup = event.target as RadioButtonGroup;
+			trace("选中了："+g.selectedValue);
 		}
 		
 	}
