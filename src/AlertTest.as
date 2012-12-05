@@ -10,7 +10,7 @@ package
 	
 	/**
 	 * Alert测试
-	 * @author DOM
+	 * @author DOM 
 	 */
 	public class AlertTest extends AppContainer
 	{
