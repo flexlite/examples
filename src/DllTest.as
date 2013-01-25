@@ -33,7 +33,7 @@ package
 			var config:ConfigItem = new ConfigItem("config/ini.amf","amf","resource/");
 			var configList:Vector.<ConfigItem> = new <ConfigItem>[config];
 			Dll.loadConfig(configList,"001","cn");//加载配置文件
-			Dll.loadGroup("loading");//加载进度条素材
+			Dll.loadGroup("loading",1);//加载进度条素材
 			Dll.loadGroup("preload");//加载预加载资源
 		}
 		
