@@ -5,8 +5,10 @@
   </group>
   <group name="preload">
     <item name="MainUI" url="swf/Main.swf" type="swf" language="all" size="36703" subkeys="Ui_Main_MenuStreng,Ui_Main_MenuPK,Ui_Main_XPText"/>
+    <item name="boxCritical" url="mp3/boxCritical.mp3" type="sound" language="all" size="3360" subkeys="Ui_Main_MenuStreng,Ui_Main_MenuPK,Ui_Main_XPText"/>
   </group>
   <group name="lazyload">
     <item name="TestImg" url="img/1.png" type="img" language="all" size="122535"/>
+    <item name="throwAPunch" url="mp3/throwAPunch.mp3" type="sound" language="all" size="1488"/>
   </group>
 </root>
