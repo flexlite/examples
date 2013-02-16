@@ -18,6 +18,7 @@ package
 		{
 			var cbb:ComboBox = new ComboBox();
 			cbb.dataProvider = dp;
+			cbb.prompt = "请输入文字";
 			cbb.addEventListener(UIEvent.OPEN,onOpen);
 			addElement(cbb);
 			cbb.horizontalCenter = 0;
