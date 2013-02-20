@@ -23,7 +23,8 @@ package
 			cbb.dataProvider = dp;
 			cbb.addEventListener(UIEvent.OPEN,onOpen);
 			addElement(cbb);
-			cbb.width = 110;
+			cbb.width = 120;
+			cbb.prompt = "请选择一项...";
 			cbb.horizontalCenter = 0;
 			cbb.y = 10;
 			for(var i:int=0;i<10;i++)
