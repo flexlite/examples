@@ -2,6 +2,7 @@ package
 {
 	import flash.events.Event;
 	
+	import org.flexlite.domUI.components.TextArea;
 	import org.flexlite.domUI.components.TextInput;
 	import org.flexlite.test.app.AppContainer;
 	
@@ -20,10 +21,17 @@ package
 		{
 			textInput = new TextInput;
 			textInput.x = 220;
+			textInput.y = 5;
 			textInput.width = 160;
-			textInput.text = "测试文本：";
+			textInput.prompt = "请输入文本";
 			addElement(textInput);
 			textInput.addEventListener(Event.CHANGE,onChange);
+			
+			var textArea:TextArea = new TextArea();
+			textArea.x = 5;
+			textArea.y = 5;
+			textArea.prompt = "请输入文本";
+			addElement(textArea);
 		}
 		
 		protected function onChange(event:Event):void
