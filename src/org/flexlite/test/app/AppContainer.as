@@ -6,6 +6,7 @@ package org.flexlite.test.app
 	import org.flexlite.domUI.core.Theme;
 	import org.flexlite.domUI.managers.SystemManager;
 	import org.flexlite.domUI.skins.themes.VectorTheme;
+	import org.flexlite.domUtils.Debugger;
 	
 	/**
 	 * 应用程序容器
@@ -17,6 +18,7 @@ package org.flexlite.test.app
 		{
 			super();
 			Injector.mapClass(Theme,VectorTheme);
+			Debugger.initialize(stage);
 			id = "appContainer";
 			stage.addEventListener(MouseEvent.MOUSE_DOWN,onMouseDown);
 			init();
