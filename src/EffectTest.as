@@ -26,8 +26,9 @@ package
 		
 		private var scale:Scale = new Scale;
 		
-		override protected function init():void
+		override protected function createChildren():void
 		{
+			super.createChildren();
 			var btn:Button = new Button;
 			btn.height = 100;
 			btn.width = 100;

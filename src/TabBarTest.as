@@ -21,8 +21,9 @@ package
 		private var tabBar:TabBar = new TabBar;
 		private var viewStack:ViewStack = new ViewStack;
 		
-		override protected function init():void
+		override protected function createChildren():void
 		{
+			super.createChildren();
 			var dp:ArrayCollection = new ArrayCollection;
 			for(var i:int=0;i<5;i++)
 			{

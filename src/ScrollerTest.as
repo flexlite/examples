@@ -19,12 +19,13 @@ package
 			super();
 		}
 		
-		override protected function init():void
+		override protected function createChildren():void
 		{
+			super.createChildren();
 			var scroller:Scroller = new Scroller;
 			scroller.width = 300;
-			scroller.height = 330;
-//			scroller.verticalScrollPolicy = ScrollPolicy.OFF;
+			scroller.height = 300;
+			scroller.dragEnabled = true;
 			addElement(scroller);
 			
 			var g:Group = new Group;
@@ -32,20 +33,20 @@ package
 			layout.orientation = TileOrientation.COLUMNS;
 			layout.horizontalAlign = HorizontalAlign.CENTER;
 			layout.paddingLeft = 300;
-//			layout.paddingRight = 300;
-//			layout.paddingBottom = 300;
-//			layout.paddingTop = 300;
 			g.layout = layout;
 			scroller.viewport = g;
 			var btn:Button = new Button;
+			btn.enabled = false;
 			btn.width = 100;
 			btn.height = 300;
 			g.addElement(btn);
 			var btn2:Button = new Button;
+			btn2.enabled = false;
 			btn2.width = 400;
 			btn2.height = 300;
 			g.addElement(btn2);
 			var btn3:Button = new Button;
+			btn3.enabled = false;
 			btn3.width = 400;
 			btn3.height = 300;
 			g.addElement(btn3);

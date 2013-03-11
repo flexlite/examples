@@ -17,8 +17,9 @@ package
 			super();
 		}
 		
-		override protected function init():void
+		override protected function createChildren():void
 		{
+			super.createChildren();
 			var cbb:DropDownList = new DropDownList();
 			cbb.dataProvider = dp;
 			cbb.addEventListener(UIEvent.OPEN,onOpen);

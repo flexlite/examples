@@ -19,8 +19,9 @@ package
 			super();
 		}
 		
-		override protected function init():void
+		override protected function createChildren():void
 		{
+			super.createChildren();
 			var page:PageNavigator = new PageNavigator;
 			page.skinName = PageNavigatorSkin;
 			page.horizontalCenter = 0;

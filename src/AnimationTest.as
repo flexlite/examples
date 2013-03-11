@@ -30,8 +30,10 @@ package
 		
 		private var button:Button = new Button;
 		private var animation:Animation = new Animation(updateValue);
-		override protected function init():void
+		
+		override protected function createChildren():void
 		{
+			super.createChildren();
 			button.label = "点击舞台移动按钮";
 			addElement(button);
 			animation.startFunction = startAnimation;
@@ -49,15 +51,12 @@ package
 		{
 			button.x = animation.currentValue["x"];
 			button.y = animation.currentValue["y"];
-//			trace("update:"+button.x+" "+button.y);
 		}
 		private function startAnimation(animation:Animation):void
 		{
-//			trace("start");
 		}
 		private function endAnimation(animation:Animation):void
 		{
-//			trace("end");
 		}
 	}
 }

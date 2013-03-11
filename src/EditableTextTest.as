@@ -20,8 +20,9 @@ package
 		
 		private var editableText:EditableText = new EditableText;
 		
-		override protected function init():void
+		override protected function createChildren():void
 		{
+			super.createChildren();
 			editableText.minWidth = 100;
 			editableText.minHeight = 30;
 			editableText.text = "哈哈";

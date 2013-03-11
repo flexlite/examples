@@ -25,8 +25,9 @@ package
 			super();
 		}
 		
-		override protected function init():void
+		override protected function createChildren():void
 		{
+			super.createChildren();
 			Dll.eventDispather.addEventListener(DllEvent.GROUP_COMPLETE,onGroupComp);
 			Dll.eventDispather.addEventListener(DllEvent.GROUP_PROGRESS,onProgress);
 			Dll.eventDispather.addEventListener(DllEvent.ITEM_LOAD_FINISHED,onItemFinished);
@@ -98,7 +99,7 @@ package
 			Dll.getResAsync("throwAPunch",function(throwAPunch:Sound):void{
 				throwAPunch.play();
 			});
-			
+			//位图资源或含有需要异步解码的资源只能通过异步方式获取。
 			Dll.getResAsync("TestImg",function(data:BitmapData):void{
 				var bitmap:Bitmap = new Bitmap(data);
 				stage.addChild(bitmap);

@@ -35,8 +35,9 @@ package
 		
 		private var rect:Rect = new Rect();
 		
-		override protected function init():void
+		override protected function createChildren():void
 		{
+			super.createChildren();
 			button.label = "点击开始拖拽";
 			button.verticalCenter = 0;
 			button.x = 10;

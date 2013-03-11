@@ -14,8 +14,9 @@ package
 		
 		private var dp:ArrayCollection = new ArrayCollection;
 		
-		override protected function init():void
+		override protected function createChildren():void
 		{
+			super.createChildren();
 			var cbb:ComboBox = new ComboBox();
 			cbb.dataProvider = dp;
 			cbb.prompt = "请输入文字";

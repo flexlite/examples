@@ -19,8 +19,9 @@ package
 			stage.quality = StageQuality.BEST;
 		}
 		
-		override protected function init():void
+		override protected function createChildren():void
 		{
+			super.createChildren();
 			var rect:Rect = new Rect();
 			rect.horizontalCenter = 0;
 			rect.verticalCenter = 0;

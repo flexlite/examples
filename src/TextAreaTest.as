@@ -17,8 +17,9 @@ package
 			super();
 		}
 		private var textInput:TextInput;
-		override protected function init():void
+		override protected function createChildren():void
 		{
+			super.createChildren();
 			textInput = new TextInput;
 			textInput.x = 220;
 			textInput.y = 5;

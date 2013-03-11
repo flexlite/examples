@@ -17,8 +17,9 @@ package
 			super();
 		}
 		
-		override protected function init():void
+		override protected function createChildren():void
 		{
+			super.createChildren();
 			var tabNavigator:TabNavigator = new TabNavigator;
 			tabNavigator.horizontalCenter = 0;
 			tabNavigator.verticalCenter = 0;

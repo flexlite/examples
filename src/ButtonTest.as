@@ -24,8 +24,9 @@ package
 		
 		private var btn:Button = new Button;
 		
-		override protected function init():void
+		override protected function createChildren():void
 		{
+			super.createChildren();
 			btn.label = "测试按钮";
 			btn.toolTip = "测试提示";
 			btn.toolTipPosition = PopUpPosition.BELOW;

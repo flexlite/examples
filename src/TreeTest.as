@@ -18,8 +18,9 @@ package
 		
 		private var tree:Tree;
 		
-		override protected function init():void
+		override protected function createChildren():void
 		{
+			super.createChildren();
 			tree = new Tree();
 			var dp:XMLCollection = new XMLCollection();
 			dp.source = <root>

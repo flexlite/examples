@@ -20,9 +20,9 @@ package
 		
 		private var hSlider:HSlider = new HSlider;
 		private var vSlider:VSlider = new VSlider;
-		override protected function init():void
+		override protected function createChildren():void
 		{
-			super.init();
+			super.createChildren();
 			hSlider.maximum = 100;
 			hSlider.minimum = 0;
 			hSlider.stepSize = 1;

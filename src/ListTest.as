@@ -25,8 +25,9 @@ package
 		
 		private var times:int = 0;
 		
-		override protected function init():void
+		override protected function createChildren():void
 		{
+			super.createChildren();
 			list = new List;
 			list.horizontalCenter = 0;
 			list.verticalCenter = 0;
@@ -57,25 +58,7 @@ package
 		
 		protected function onListEvent(event:ListEvent):void
 		{
-//			trace(event.type+":"+event.itemIndex);
-		}
-		
-		override protected function onDrag(offsetX:Number, offsetY:Number):void
-		{
-			if(list.dataGroup==null)
-				return;
-			var hsp:Number = list.dataGroup.horizontalScrollPosition - offsetX;
-			var vsp:Number = list.dataGroup.verticalScrollPosition - offsetY;
-			if(hsp>list.dataGroup.contentWidth - list.dataGroup.width)
-				hsp = list.dataGroup.contentWidth - list.dataGroup.width;
-			if(hsp<0)
-				hsp = 0;
-			if(vsp>list.dataGroup.contentHeight - list.dataGroup.height)
-				vsp = list.dataGroup.contentHeight - list.dataGroup.height;
-			if(vsp<0)
-				vsp=0;
-			list.dataGroup.horizontalScrollPosition = hsp;
-			list.dataGroup.verticalScrollPosition = vsp;
+			trace(event.type+":"+event.itemIndex);
 		}
 	}
 }
