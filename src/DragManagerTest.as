@@ -111,6 +111,7 @@ package
 		 */		
 		private function onDragDrop(event:DragEvent):void
 		{
+			rect.strokeColor = 0x000000;
 			var data:String = event.dragSource.dataForFormat("ButtonData") as String;
 			var btn:Button = new Button();
 			btn.label = data;
