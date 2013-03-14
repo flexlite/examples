@@ -58,7 +58,6 @@ package
 		
 		protected function onListEvent(event:ListEvent):void
 		{
-			trace(event.type+":"+event.itemIndex);
 		}
 	}
 }
