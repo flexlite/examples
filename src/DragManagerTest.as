@@ -42,6 +42,7 @@ package
 			button.verticalCenter = 0;
 			button.x = 10;
 			button.addEventListener(MouseEvent.MOUSE_DOWN,onStartDrag);
+			button.addEventListener(DragEvent.DRAG_COMPLETE,onDragComp);
 			
 			var g:Group = new Group();
 			g.width = g.height = 200;
@@ -71,7 +72,6 @@ package
 			group.addEventListener(DragEvent.DRAG_EXIT,onDragExit);
 		}
 		
-		
 		private var count:int = 0;
 		/**
 		 * 发起一次拖拽操作
@@ -88,6 +88,16 @@ package
 			
 			DragManager.doDrag(button,dragSource,dragImage);
 		}
+		/**
+		 * 拖拽结束
+		 */		
+		private function onDragComp(event:DragEvent):void
+		{
+			if(!event.relatedObject)
+			{
+				trace("拖拽失败！");
+			}
+		}	
 		/**
 		 * group监听拖拽进入事件
 		 */		
