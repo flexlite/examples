@@ -36,7 +36,7 @@ package
 			layout.paddingLeft = 180;
 			dataGroup.layout = layout;
 			dataGroup.clipAndEnableScrolling = true;
-			addElement(dataGroup);
+			
 			page.viewport = dataGroup;
 			page.height = 118;
 			page.width = 290;
