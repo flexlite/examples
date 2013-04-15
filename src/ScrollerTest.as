@@ -25,7 +25,6 @@ package
 			var scroller:Scroller = new Scroller;
 			scroller.width = 300;
 			scroller.height = 300;
-			scroller.dragEnabled = true;
 			addElement(scroller);
 			
 			var g:Group = new Group;
