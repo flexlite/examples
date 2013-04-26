@@ -2,6 +2,7 @@ package
 {
 	import flash.display.Bitmap;
 	import flash.display.BitmapData;
+	import flash.display.InteractiveObject;
 	import flash.events.MouseEvent;
 	
 	import org.flexlite.domUI.components.Button;
@@ -93,9 +94,14 @@ package
 		 */		
 		private function onDragComp(event:DragEvent):void
 		{
-			if(!event.relatedObject)
+			if(event.relatedObject)
 			{
-				trace("拖拽失败！");
+				var target:InteractiveObject = event.relatedObject;
+				trace("接受拖拽的对象是："+target);
+			}
+			else
+			{
+				trace("拖拽失败！没人接受你的数据");
 			}
 		}	
 		/**
