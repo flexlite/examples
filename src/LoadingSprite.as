@@ -41,6 +41,7 @@ package
 			stage.stageFocusRect=false;
 			stage.addEventListener(Event.RESIZE,onResize);
 			stage.addEventListener(FullScreenEvent.FULL_SCREEN,onResize);
+			addEventListener(Event.REMOVED_FROM_STAGE,onRemoveFromState);
 			onResize();
 			progressBar.horizontalCenter = 0;
 			progressBar.verticalCenter = 0;
@@ -49,6 +50,13 @@ package
 			progressBar.labelFunction = labelFunction;
 			progressBar.slideDuration = 0;
 			addElement(progressBar);
+		}
+		
+		private function onRemoveFromState(event:Event):void
+		{
+			removeEventListener(Event.REMOVED_FROM_STAGE,onRemoveFromState);
+			stage.removeEventListener(Event.RESIZE,onResize);
+			stage.removeEventListener(FullScreenEvent.FULL_SCREEN,onResize);
 		}
 		
 		/**
