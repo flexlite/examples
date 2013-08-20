@@ -1,5 +1,7 @@
 package
 {
+	import flash.events.MouseEvent;
+	
 	import org.flexlite.domUI.collections.ArrayCollection;
 	import org.flexlite.domUI.components.Button;
 	import org.flexlite.domUI.components.TabBar;
@@ -24,31 +26,30 @@ package
 		override protected function createChildren():void
 		{
 			super.createChildren();
-			var dp:ArrayCollection = new ArrayCollection;
+			
 			for(var i:int=0;i<5;i++)
 			{
-				dp.addItem("Tab"+i);
 				var button:Button = new Button;
-				button.width = 200;
-				button.height = 100;
+				button.name = "Tab"+i;
 				button.label = "按钮"+i;
 				viewStack.addElement(button);
 			}
 			
-			tabBar.dataProvider = dp;
-			tabBar.height = 50;
-			tabBar.width = 450;
+			tabBar.dataProvider = viewStack;
 			tabBar.horizontalCenter = 0;
-			tabBar.addEventListener(IndexChangeEvent.CHANGE,onIndexChanged);
 			addElement(tabBar);
 			viewStack.y = 60;
 			viewStack.horizontalCenter = 0;
 			addElement(viewStack);
+			
+			var btn:Button = new Button();
+			btn.addEventListener(MouseEvent.CLICK,onCLick);
+			addElement(btn);
 		}
 		
-		protected function onIndexChanged(event:IndexChangeEvent):void
+		protected function onCLick(event:MouseEvent):void
 		{
-			viewStack.selectedIndex = event.newIndex;
+			viewStack.selectedIndex = 3;
 		}
 	}
 }
