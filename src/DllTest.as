@@ -9,6 +9,7 @@ package
 	
 	import org.flexlite.domDll.Dll;
 	import org.flexlite.domDll.core.ConfigItem;
+	import org.flexlite.domDll.core.DllItem;
 	import org.flexlite.domDll.events.DllEvent;
 	import org.flexlite.domUI.components.ProgressBar;
 	import org.flexlite.test.app.AppContainer;
@@ -104,6 +105,13 @@ package
 				var bitmap:Bitmap = new Bitmap(data);
 				stage.addChild(bitmap);
 			});
+			//运行时创建自定义的加载组
+			Dll.createGroup("custom",["TestImg","Ui_Main_Lightball","Ui_Main_RedBubble"]);
+			var list:Vector.<DllItem> = Dll.getGroupByName("custom");
+			for each(var item:DllItem in list)
+			{
+				trace(item);
+			}
 			
 		}
 	}
