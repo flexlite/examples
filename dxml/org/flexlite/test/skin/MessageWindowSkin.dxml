@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dx:StateSkin xmlns:dx="http://www.flexlite.org/dxml/2012" xmlns:fs="http://www.flexlite.org/studio/2012" width="325" height="218">
+	<fs:HostComponent name="org.flexlite.domUI.components.TitleWindow"/>
+	<fs:Declarations>
+		<dx:DropShadowFilter alpha="1.00" angle="0.00" blurY="4" color="0x000000" quality="1" blurX="4" hideObject="false" distance="0" inner="false" strength="10" knockout="false" id="__DropShadowFilter0"/>
+	</fs:Declarations>
+	<dx:states>
+		<dx:State name="normal"/>
+		<dx:State name="disabled"/>
+	</dx:states>
+	<dx:UIAsset left="0" right="0" top="-0.5" bottom="0.5" skinName="DXR__BBE7AE29"/>
+	<dx:UIAsset left="11" right="11" top="36" bottom="35" skinName="DXR__2E87D19D"/>
+	<dx:Button width="30" height="29" top="2" right="8" label="按钮" id="closeButton" x="265" skinName="org.flexlite.test.skin.CloseButtonSkin"/>
+	<dx:Button width="70" height="26" label="确定" y="185" id="confirmButton" horizontalCenter="0" skinName="org.flexlite.test.skin.ButtonSkin"/>
+	<dx:Group left="16" right="16" top="41" id="contentGroup" bottom="42">
+		<dx:Label text="这是一个弹出的窗口面板" bold="true" size="14" maxWidth="310" textColor="0xFFFFFF" id="labelDisplay" textAlign="center" filters="{[__DropShadowFilter0]}" verticalAlign="middle" left="8" right="7" top="5" bottom="4"/>
+	</dx:Group>
+	<dx:Label id="titleDisplay" y="9" horizontalCenter="-3.5" text="窗口标题" filters="{[__DropShadowFilter0]}" size="18" textColor="0xFFFFFF" textAlign="center" bold="true" width="244"/>
+	<dx:Group left="2" height="34" id="moveArea" right="42" y="0"/>	
+</dx:StateSkin>

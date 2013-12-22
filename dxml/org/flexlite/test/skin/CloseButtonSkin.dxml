@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dx:StateSkin xmlns:dx="http://www.flexlite.org/dxml/2012" xmlns:fs="http://www.flexlite.org/studio/2012">
+	<fs:HostComponent name="org.flexlite.domUI.components.SkinnableComponent"/>
+	<dx:states>
+		<dx:State name="up"/>
+		<dx:State name="over"/>
+		<dx:State name="down"/>
+		<dx:State name="disabled"/>
+	</dx:states>
+  <dx:UIAsset skinName="DXR__50CAEA8B" includeIn="over,down" x="-1" y="-1"/>
+  <dx:UIAsset skinName="DXR__8E405C7E" includeIn="up,disabled" x="0" y="0"/>
+</dx:StateSkin>

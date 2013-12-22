@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <group name="loading">
-    <item name="LoadingSprite" url="LoadingSprite.swf" type="swf" language="all" size="39279"/>
+  <group name="preload">
+    <item name="MainUI" url="swf/Main.swf" type="swf" language="all" size="36703" subkeys="Ui_Main_BubbleRise,Ui_Main_BuleBubble,Ui_Main_CloseBtn,Ui_Main_ContainerBg,Ui_Main_ContainerBg1,Ui_Main_ContainerBg2,Ui_Main_ContainerBg3,Ui_Main_EnemyHpBar,Ui_Main_EnemyHpBg,Ui_Main_EnemyRageBar,Ui_Main_EnemyRageBg,Ui_Main_EnergyBar,Ui_Main_ExpBar,Ui_Main_ExpBg,Ui_Main_Flash,Ui_Main_GameMoney,Ui_Main_GameMoneyText,Ui_Main_HpBar,Ui_Main_HpBg,Ui_Main_Lightball,Ui_Main_MenuBag,Ui_Main_MenuBg,Ui_Main_MenuFrd,Ui_Main_MenuPK,Ui_Main_MenuRole,Ui_Main_MenuShp,Ui_Main_MenuSkill,Ui_Main_MenuStreng,Ui_Main_MenuTask,Ui_Main_RageBar,Ui_Main_RageBg,Ui_Main_RedBubble,Ui_Main_Right,Ui_Main_SPText,Ui_Main_SP_0,Ui_Main_SP_1,Ui_Main_SP_2,Ui_Main_SP_3,Ui_Main_SP_4,Ui_Main_SP_5,Ui_Main_SP_6,Ui_Main_SP_7,Ui_Main_SP_8,Ui_Main_SP_9,Ui_Main_ScrollBg,Ui_Main_ScrollThumbBg,Ui_Main_TipBg,Ui_Main_Wrong,Ui_Main_XPText,Ui_Main_XP_0,Ui_Main_XP_1,Ui_Main_XP_2,Ui_Main_XP_3,Ui_Main_XP_4,Ui_Main_XP_5,Ui_Main_XP_6,Ui_Main_XP_7,Ui_Main_XP_8,Ui_Main_XP_9,Ui_Main_setBgBtn,Ui_Main_setButton,Ui_Main_setKeyButton,Ui_Main_zoomOutButton,Ui_Main_zoomUpButton"/>
+    <item name="boxCritical" url="mp3/boxCritical.mp3" type="sound" language="all" size="3360"/>
   </group>
   <group name="lazyload">
     <item name="TestImg" url="img/1.png" type="img" language="all" size="122535"/>
     <item name="throwAPunch" url="mp3/throwAPunch.mp3" type="sound" language="all" size="1488"/>
   </group>
-  <group name="preload">
-    <item name="MainUI" url="swf/Main.swf" type="swf" language="all" size="36703" subkeys="Ui_Main_BubbleRise,Ui_Main_BuleBubble,Ui_Main_CloseBtn,Ui_Main_ContainerBg,Ui_Main_ContainerBg1,Ui_Main_ContainerBg2,Ui_Main_ContainerBg3,Ui_Main_EnemyHpBar,Ui_Main_EnemyHpBg,Ui_Main_EnemyRageBar,Ui_Main_EnemyRageBg,Ui_Main_EnergyBar,Ui_Main_ExpBar,Ui_Main_ExpBg,Ui_Main_Flash,Ui_Main_GameMoney,Ui_Main_GameMoneyText,Ui_Main_HpBar,Ui_Main_HpBg,Ui_Main_Lightball,Ui_Main_MenuBag,Ui_Main_MenuBg,Ui_Main_MenuFrd,Ui_Main_MenuPK,Ui_Main_MenuRole,Ui_Main_MenuShp,Ui_Main_MenuSkill,Ui_Main_MenuStreng,Ui_Main_MenuTask,Ui_Main_RageBar,Ui_Main_RageBg,Ui_Main_RedBubble,Ui_Main_Right,Ui_Main_SPText,Ui_Main_SP_0,Ui_Main_SP_1,Ui_Main_SP_2,Ui_Main_SP_3,Ui_Main_SP_4,Ui_Main_SP_5,Ui_Main_SP_6,Ui_Main_SP_7,Ui_Main_SP_8,Ui_Main_SP_9,Ui_Main_ScrollBg,Ui_Main_ScrollThumbBg,Ui_Main_TipBg,Ui_Main_Wrong,Ui_Main_XPText,Ui_Main_XP_0,Ui_Main_XP_1,Ui_Main_XP_2,Ui_Main_XP_3,Ui_Main_XP_4,Ui_Main_XP_5,Ui_Main_XP_6,Ui_Main_XP_7,Ui_Main_XP_8,Ui_Main_XP_9,Ui_Main_setBgBtn,Ui_Main_setButton,Ui_Main_setKeyButton,Ui_Main_zoomOutButton,Ui_Main_zoomUpButton"/>
-    <item name="boxCritical" url="mp3/boxCritical.mp3" type="sound" language="all" size="3360"/>
+  <group name="loading">
+    <item name="LoadingSprite" url="LoadingSprite.swf" type="swf" language="all" size="39279"/>
+  </group>
+  <group name="uigroup">
+    <item name="ButtonSkin__ED1695E4" url="ui/ButtonSkin__ED1695E4.dxr" type="dxr" language="all" size="2012" subkeys="DXR__1C5D2D62,DXR__276F2CB5,DXR__7905FD81,DXR__F2888F03"/>
+    <item name="CloseButtonSkin__87BE639B" url="ui/CloseButtonSkin__87BE639B.dxr" type="dxr" language="all" size="2088" subkeys="DXR__50CAEA8B,DXR__8E405C7E"/>
+    <item name="TitleWindowSkin__E6A80D4C" url="ui/TitleWindowSkin__E6A80D4C.dxr" type="dxr" language="all" size="1761" subkeys="DXR__BBE7AE29,DXR__2E87D19D"/>
   </group>
 </root>

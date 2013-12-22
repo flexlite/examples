@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dx:StateSkin xmlns:dx="http://www.flexlite.org/dxml/2012" xmlns:fs="http://www.flexlite.org/studio/2012">
+	<fs:HostComponent name="org.flexlite.domUI.components.Button"/>
+	<fs:Declarations>
+		<dx:DropShadowFilter alpha="1.00" angle="0.00" blurY="4" color="0x000000" quality="1" blurX="4" hideObject="false" distance="0" inner="false" strength="10" knockout="false" id="__DropShadowFilter0"/>
+	</fs:Declarations>
+	<dx:states>
+		<dx:State name="up"/>
+		<dx:State name="over"/>
+		<dx:State name="down"/>
+		<dx:State name="disabled"/>
+	</dx:states>	
+	<dx:UIAsset left="0" y="0" top="0" right="0" skinName="DXR__1C5D2D62" bottom="0" x="0" includeIn="disabled"/>
+	<dx:UIAsset left="0" top="0" bottom="0" skinName="DXR__276F2CB5" right="0" includeIn="up"/>
+	<dx:UIAsset left="0" top="0" bottom="0" skinName="DXR__7905FD81" right="0" includeIn="down"/>
+	<dx:UIAsset left="0" top="0" bottom="0" skinName="DXR__F2888F03" right="0" includeIn="over"/>
+	<dx:Label paddingTop="4" id="labelDisplay" horizontalCenter="0" text="按钮" size="14" textAlign="center" paddingBottom="4" filters="{[__DropShadowFilter0]}" paddingLeft="10" bold="false" textColor="0xFFFFCD" paddingRight="10" fontFamily="FZShaoEr-M11S" verticalCenter="0"/>
+</dx:StateSkin>

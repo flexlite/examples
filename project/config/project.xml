@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<dxml-config><!--配置中所有路径都相对于工程根目录-->
+	<max-png-pix>6000</max-png-pix><!--位图化素材时小于此像素数量的位图使用png编码-->
+	<asset-path>src/resource/ui/</asset-path><!--项目中素材资源存放的路径,发布素材时将拷贝到此目录-->
+	<use-dll>true</use-dll><!--true表示使用FlexLite原生的Dll加载库，false表示使用自定义的加载库，为false时dll-config-path无效。-->
+	<dll-config-path>src/config/ini.xml</dll-config-path><!--项目中Dll配置文件的路径-->
+	<dll-root-path>src/resource/</dll-root-path><!--Dll配置文件中剪裁url使用的资源根路径-->
+	<dll-group-name>uigroup</dll-group-name><!--Dll配置文件中的组名，发布素材时会自动把素材配置添加到这个组内-->
+</dxml-config>
