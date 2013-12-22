@@ -17,8 +17,8 @@ package org.flexlite.test.app
 		public function AppContainer()
 		{
 			super();
-			Injector.mapClass(Theme,VectorTheme);
-			Debugger.initialize(stage);
+			Injector.mapClass(Theme,VectorTheme);//这里为了方便调试，一次性注入所有组件的默认皮肤。正式项目中不需要默认皮肤,应当自定义主题。
+			Debugger.initialize(stage);//显示列表调试工具(可选)。
 		}
 	}
 }
