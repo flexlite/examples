@@ -8,6 +8,7 @@ package
 	import org.flexlite.domDll.core.ConfigItem;
 	import org.flexlite.domDll.events.DllEvent;
 	import org.flexlite.domUI.components.Button;
+	import org.flexlite.domUI.components.UIAsset;
 	import org.flexlite.domUI.core.ISkinAdapter;
 	import org.flexlite.domUI.core.UIComponent;
 	import org.flexlite.domUI.managers.PopUpManager;
@@ -35,7 +36,7 @@ package
 		/**
 		 * 游戏场景层
 		 */		
-		private var gameLayer:UIComponent;
+		private var gameLayer:UIAsset;
 		/**
 		 * 初始化
 		 */		
@@ -51,9 +52,7 @@ package
 			Dll.loadConfig(configList,"001","cn");//加载配置文件
 			
 			//初始化游戏场景层
-			gameLayer = new UIComponent();
-			gameLayer.width = 800;
-			gameLayer.height = 600;
+			gameLayer = new UIAsset();//不要设置gameLayer的宽高，否则会导致scene缩放。
 			gameLayer.horizontalCenter = 0;
 			gameLayer.verticalCenter = 0;
 			addElement(gameLayer);
@@ -65,7 +64,7 @@ package
 			scene.graphics.endFill();
 			
 			//gameLayer内可以使用传统显示列表操作方法。
-			gameLayer.addChild(scene);
+			gameLayer.skinName = scene;
 		}
 		
 		/**
