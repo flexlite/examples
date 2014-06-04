@@ -48,7 +48,14 @@ package org.flexlite.test.app
 			}
 			else if(skinName is String)
 			{
-				Dll.getResAsync(skinName as String,onParseStringComp,{skinName:skinName, compFunc:compFunc, oldSkin:oldSkin});
+				if(Dll.hasKey(skinName as String))
+				{
+					Dll.getResAsync(skinName as String,onParseStringComp,{skinName:skinName, compFunc:compFunc, oldSkin:oldSkin});
+				}
+				else
+				{
+					Dll.getResByUrl(skinName as String,onParseStringComp,"",{skinName:skinName, compFunc:compFunc, oldSkin:oldSkin});
+				}
 			}
 			else if(skinName is ByteArray)
 			{
