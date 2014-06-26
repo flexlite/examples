@@ -10,7 +10,7 @@ package org.flexlite.test.app
 	
 	/**
 	 * 应用程序容器
-	 * @author DOM
+	 * @author dom
 	 */	
 	public class AppContainer extends SystemManager
 	{

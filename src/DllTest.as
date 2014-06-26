@@ -17,7 +17,7 @@ package
 	[SWF(width='700', height='480', backgroundColor='#aaaaaa', frameRate='24')]
 	/**
 	 * 资源管理器测试
-	 * @author DOM
+	 * @author dom
 	 */
 	public class DllTest extends AppContainer
 	{

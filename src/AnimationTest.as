@@ -11,7 +11,7 @@ package
 	
 	/**
 	 * Animation测试
-	 * @author DOM
+	 * @author dom
 	 */	
 	public class AnimationTest extends AppContainer
 	{

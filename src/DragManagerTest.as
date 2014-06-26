@@ -18,7 +18,7 @@ package
 	
 	/**
 	 * 
-	 * @author DOM
+	 * @author dom
 	 */
 	public class DragManagerTest extends AppContainer
 	{

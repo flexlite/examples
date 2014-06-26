@@ -8,7 +8,7 @@ package
 	
 	/**
 	 * 
-	 * @author DOM
+	 * @author dom
 	 */
 	public class ProgressBarTest extends AppContainer
 	{

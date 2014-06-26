@@ -10,7 +10,7 @@ package
 	
 	/**
 	 * Label测试
-	 * @author DOM
+	 * @author dom
 	 */	
 	public class LabelTest extends AppContainer
 	{

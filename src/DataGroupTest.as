@@ -7,7 +7,7 @@ package
 	
 	/**
 	 * DataGroup测试
-	 * @author DOM
+	 * @author dom
 	 */
 	public class DataGroupTest extends AppContainer
 	{

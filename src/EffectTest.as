@@ -9,7 +9,7 @@ package
 	
 	/**
 	 * 
-	 * @author DOM
+	 * @author dom
 	 */
 	public class EffectTest extends AppContainer
 	{

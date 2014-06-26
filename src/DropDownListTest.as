@@ -8,7 +8,7 @@ package
 	
 	/**
 	 * DropDownList测试
-	 * @author DOM
+	 * @author dom
 	 */
 	public class DropDownListTest extends AppContainer
 	{

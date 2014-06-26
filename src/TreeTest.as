@@ -8,7 +8,7 @@ package
 	
 	/**
 	 * Tree测试
-	 * @author DOM
+	 * @author dom
 	 */
 	public class TreeTest extends AppContainer
 	{

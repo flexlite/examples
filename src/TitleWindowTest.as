@@ -13,7 +13,7 @@ package
 	
 	/**
 	 * TitleWindow测试
-	 * @author DOM
+	 * @author dom
 	 */
 	public class TitleWindowTest extends AppContainer
 	{

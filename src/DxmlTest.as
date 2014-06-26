@@ -20,7 +20,7 @@ package
 	
 	/**
 	 * DXML皮肤测试
-	 * @author DOM
+	 * @author dom
 	 */
 	public class DxmlTest extends SystemManager
 	{

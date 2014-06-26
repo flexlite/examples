@@ -13,7 +13,7 @@ package
 	
 	/**
 	 * 按钮测试
-	 * @author DOM
+	 * @author dom
 	 */
 	public class ButtonTest extends AppContainer
 	{

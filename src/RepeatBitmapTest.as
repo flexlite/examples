@@ -12,7 +12,7 @@ package
 	
 	/**
 	 * 
-	 * @author DOM
+	 * @author dom
 	 */
 	public class RepeatBitmapTest extends AppContainer
 	{

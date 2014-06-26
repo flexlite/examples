@@ -8,7 +8,7 @@ package
 	
 	/**
 	 * 文本输入控件测试
-	 * @author DOM
+	 * @author dom
 	 */
 	public class TextAreaTest extends AppContainer
 	{

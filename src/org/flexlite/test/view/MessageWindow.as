@@ -13,7 +13,7 @@ package org.flexlite.test.view
 	
 	/**
 	 * 消息窗口(这只是一个示例，实际上消息窗口可以直接使用Alert组件更加方便。)
-	 * @author DOM
+	 * @author dom
 	 */
 	public class MessageWindow extends TitleWindow
 	{

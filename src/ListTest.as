@@ -10,7 +10,7 @@ package
 	
 	/**
 	 * List组件测试
-	 * @author DOM
+	 * @author dom
 	 */	
 	public class ListTest extends AppContainer
 	{

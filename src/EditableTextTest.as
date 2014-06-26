@@ -9,7 +9,7 @@ package
 	
 	/**
 	 * EditableText测试
-	 * @author DOM
+	 * @author dom
 	 */
 	public class EditableTextTest extends AppContainer
 	{

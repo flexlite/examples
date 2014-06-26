@@ -10,7 +10,7 @@ package
 	
 	/**
 	 * PageNavigator测试
-	 * @author DOM
+	 * @author dom
 	 */
 	public class PageNavigatorTest extends AppContainer
 	{

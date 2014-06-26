@@ -11,7 +11,7 @@ package
 	
 	/**
 	 * TabBar测试
-	 * @author DOM
+	 * @author dom
 	 */
 	public class TabBarTest extends AppContainer
 	{

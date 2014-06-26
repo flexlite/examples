@@ -20,7 +20,7 @@ package org.flexlite.test.app
 	
 	/**
 	 * 皮肤适配器示例
-	 * @author DOM
+	 * @author dom
 	 */
 	public class SkinAdapter implements ISkinAdapter
 	{

@@ -9,7 +9,7 @@ package
 	
 	/**
 	 * Slider测试
-	 * @author DOM
+	 * @author dom
 	 */
 	public class SliderTest extends AppContainer
 	{

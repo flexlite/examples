@@ -12,7 +12,7 @@ package
 	
 	/**
 	 * Loading进度条界面
-	 * @author DOM
+	 * @author dom
 	 */
 	public class LoadingSprite extends Group
 	{
